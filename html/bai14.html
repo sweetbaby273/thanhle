@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        form {
+   width: 70%;
+   margin: auto;
+   border: 1px solid black;
+   padding: 20px;
+  }
+
+  input[type=text], textarea {
+   width: 70%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   resize: vertical;
+  }
+
+  label {
+   padding: 12px 12px 12px 0;
+   display: inline-block;
+  }
+
+  .row:after {
+   content: "";
+   display: table;
+   clear: both;
+  }
+
+  .col-25 {
+   float: left;
+   width: 25%;
+   margin-top: 6px;
+  }
+
+  .col-75 {
+   float: left;
+   width: 75%;
+   margin-top: 6px;
+  }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="font: size 45px;">Contact us</h1>
+    <hr>
+    <P1>Use the following form to send a message to </P1>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email của bạn" autocomplete="on" required>
+        <hr>
+        <label for="Message">Message</label>
+        <textarea type="Message" id="message" name="message" placeholder="Nhập tin nhắn bạn muốn gửi" autocomplete="on" required></textarea>.
+        <hr>
+        <label for="how-heard">How did you hear of us?</label>
+    <select id="how-heard" name="how-heard">
+    <option value="">--Please choose an option--</option>
+    <option value="friend">From a friend</option>
+    <option value="search">Found you through search engine</option>
+    <option value="social">Through social media</option>
+    <option value="social">Google</option>
+    <option value="other">Other</option>    
+    </select>
+    <hr>
+  <label for="newsletter">Ensure this box is checked if you would like to receive email updates</label>
+  <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+    <hr>
+  <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

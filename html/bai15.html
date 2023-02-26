@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        form {
+   width: 70%;
+   margin: auto;
+   border: 1px solid black;
+   padding: 20px;
+  }
+
+  input[type=text], textarea {
+   width: 70%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   resize: vertical;
+  }
+
+  label {
+   padding: 12px 12px 12px 0;
+   display: inline-block;
+  }
+
+  .row:after {
+   content: "";
+   display: table;
+   clear: both;
+  }
+
+  .col-25 {
+   float: left;
+   width: 25%;
+   margin-top: 6px;
+  }
+
+  .col-75 {
+   float: left;
+   width: 75%;
+   margin-top: 6px;
+  }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <fieldset>
+        <legend>Your message</legend>
+    <div style="border: 1px solid black; padding: 10px; margin: 10px;">
+		
+		<hr>
+		<div style="border: 1px solid black; padding: 10px; margin: 10px;">
+			<label for="to">To:</label>
+			<input type="text" id="to" name="to" required><br><br>
+
+			<label for="email">Your Email:</label>
+			<input type="email" id="email" name="email" required><br><br>
+
+			<label for="message">Message:</label><br>
+			<textarea id="message" name="message" rows="4" cols="50" required></textarea>
+		</div>
+    </fieldset>
+    <fieldset>
+		<legend>How You Found Us</legend>
+		<hr>
+		<div style="border: 1px solid black; padding: 10px; margin: 10px;">
+			<label for="how">How Did You Hear of Us:</label><br>
+			<select id="how" name="how" required>
+				<option value="">Google</option>
+				<option value="google">Google</option>
+				<option value="facebook">Facebook</option>
+				<option value="friend">Friend</option>
+				<option value="other">Other</option>
+			</select><br><br>
+
+			<label for="newsletter"><input type="checkbox" id="newsletter" name="newsletter" required> Ensure this box is checked if you would like to received email updates</label>
+            
+            <hr>
+            <input type="Send message" value="Send message">
+		</div>
+    </fieldset>
+    <fieldset>
+		<legend>Contact Information</legend>
+		<hr>
+		<div style="border: 1px solid black; padding: 10px; margin: 10px;">
+			<label for="fname">First Name:</label>
+			<input type="text" id="fname" name="fname" required><br><br>
+
+			<label for="lname">Last Name:</label>
+			<input type="text" id="lname" name="lname" required><br><br>
+
+			<label for="email2">Email:</label>
+			<input type="email" id="email2" name="email2" required>
+		</div>
+    </fieldset>
+    <fieldset>
+		<legend>Competition Question</legend>
+		<hr>
+		<div style="border: 1px solid black; padding: 10px; margin: 10px;">
+			<p>How tall is the Eiffel Tower in Paris, France?</p>
+			<label for="answer1"><input type="radio" id="answer1" name="answer" value="42" required> 584 ft</label><br>
+			<label for="answer2"><input type="radio" id="answer2" name="answer" value="24">784 ft</label><br>
+			<label for="answer3"><input type="radio" id="answer3" name="answer" value="40"> 984 ft</label><br>
+			<label for="answer4"><input type="radio" id="answer4" name="answer" value="0">1184 ft</label>
+		</div>
+    </fieldset>
+    <fieldset>
+		<legend>Tiebreaker Question</legend>
+		<hr>
+		<div style="border: 1px
+        <div class="container">
+  <div class="question">
+    <label for="question">In 25 words or less, say why you would like to win $10,000:</label>
+  <br>
+  <textarea id="question" name="question" rows="4" cols="50"></textarea>
+  <br><br>
+  </div>
+    </fieldset>
+    <fieldset>
+        <legend>Enter competition</legend>
+        <input type="Enter Cometition" value="Enter Cometition">
+    </fieldset>
+
+</body>
+</html>
