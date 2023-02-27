@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+		h1 {
+			text-align: center;
+			font-size: 36px;
+		}
+        form {
+   width: 70%;
+   margin: auto;
+   border: 1px solid black;
+   padding: 20px;
+  }
+
+  input[type=text], textarea {
+   width: 70%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   resize: vertical;
+  }
+
+  label {
+   padding: 12px 12px 12px 0;
+   display: inline-block;
+  }
+
+  .row:after {
+   content: "";
+   display: table;
+   clear: both;
+  }
+
+  .col-25 {
+   float: left;
+   width: 25%;
+   margin-top: 6px;
+  }
+
+  .col-75 {
+   float: left;
+   width: 75%;
+   margin-top: 6px;
+  }
+	</style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+</head>
+<body>
+    <fieldset style="background-color: rgb(255, 193, 37)" >
+        
+        <h1>Survey Form</h1> 
+        <label for="doc">If you are interested in purchasing one or more of our products, before ordering please complete some or all of the following survey for our marketing department. Answering any question is optional, and all information will be kept strictly confidential. Thank you very much for your time!</label><br>
+		<label for="Full name">1. What is your name?</label><br>
+		<input type="Full name" id="Full name" name="Full name" placeholder="FirstName LastName" autocomplete="on" required><br>
+        <label for="Full name">2. What is your date of birth</label><br>
+        <label for="Full name">Month:</label>
+        <select name="month" required>
+            <option value="" disabled selected hidden>Month</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+          <label for="Full name">Date:</label>
+          <input type="number" name="date" placeholder="Date" min="1" max="31" required>
+          <label for="Full name">Year:</label>
+          <input type="number" name="year" placeholder="Year" min="1900" max="9999" required><br>
+        <label for="address">3.what is your malling address (if you would like to have a hared copy of our catalog sent to you)?</label>
+        <textarea id="address" name="address" rows="4" cols="50" placeholder="Number /P.O. Box/Route:
+Street/Avenue/Road:
+City:
+State/Zip:" autocomplete="on" required></textarea>
+        <label for="address">4. What is your email address? </label><br>
+        <input type="address" id="address" name="address" required>
+        <p>6.If so, what product(s), besides the one you are ordering,might you be interested in purchasing in the future? (Check all that apply.)</p>
+			<label for="answer1"><input type="radio" id="answer1" name="answer" value="42" required>VCR</label><br>
+			<label for="answer2"><input type="radio" id="answer2" name="answer" value="24" required>Big Screen TV</label><br>
+			<label for="answer3"><input type="radio" id="answer3" name="answer" value="40" required>Audio Equipment</label><br>
+            <label for="answer1"><input type="radio" id="answer1" name="answer" value="42" required>Video Equipment</label><br>
+			<label for="answer2"><input type="radio" id="answer2" name="answer" value="24" required>CameraEquipment</label><br>
+			<label for="answer3"><input type="radio" id="answer3" name="answer" value="40" required>Ohter</label>
+            <input type="other" id="other" name="other"placeholder="Please list:" required><br>
+        <p1>7. Do you have any questions, comments or suggestions before proceeding to the Orther Form? </p1>
+        <textarea id="address" name="address" rows="4" cols="50" placeholder="Your Input:" required ></textarea><br>
+        <input type="submit" value="Send Form">
+       <input type="submit" value="Clear Form">
+    </fieldset>
+</body>
+</html>
