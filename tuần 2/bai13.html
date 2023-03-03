@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="name">Họ tên:</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn" autocomplete="on" required>
+        <hr>
+        <label for="telephone">Số điện thoại:</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="Nhập số điện thoại của bạn" autocomplete="on" required>
+        <hr>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email của bạn" autocomplete="on" required>
+        <hr>
+        <label for="color">Màu yêu thích:</label>
+        <input type="color" id="color" name="color" required>
+        <hr>
+        
+          <option value="">-- Chọn ngày sinh --</option>
+          <input type="date" name="birthday" required>
+          </optgroup>
+        </select>
+      
+        <button type="submit">Gửi</button>
+      </form>
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+      <script>
+        $('#birthdate').datepicker(
+      {
+        showButtonPanel: true,    
+        dateFormat: 'dd/mm/yy'    
+      }
+    );
+      </script>
+</body>
+</html>
